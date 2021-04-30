@@ -13,7 +13,7 @@
 #include "acti1.h"
 
 /**
- * @brief A function to operate the button and heater sensor
+ * @brief A function to operate button and heater sensor
  * 
  */
 void Buttons_LED_Init()
