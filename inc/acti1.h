@@ -1,6 +1,6 @@
 /**
  * @file acti1.h
- * @author ISHWAR KUBASAD (you@domain.com)
+ * @author ISHWAR KUBASAD (kubsadishwar@gmail.com)
  * @brief 
  * @version 0.1
  * @date 2021-04-28
@@ -33,13 +33,13 @@
  * @brief A macro to turn on the LED 
  * 
  */
-#define SET_LED PORTD|=(1<<PD6)
+#define SET_LED PORTD|=(1<<PB0)
 
 /**
  * @brief A macro to turn off the LED
  * 
  */
-#define CLR_LED PORTD&=~(1<<PD6)
+#define CLR_LED PORTD&=~(1<<PB0)
 
 void Buttons_LED_Init();
 
