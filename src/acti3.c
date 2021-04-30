@@ -27,7 +27,7 @@ void TimerGenMode(void);{
 }
 
 /**
- * @brief A function which receives 10 bit of ADC input from temperature sensor and outputs as a fast PWM waveform.
+ * @brief A function which receive 10 bit of ADC input from temperature sensor and outputs as a fast PWM waveform.
  * 
  * @param ADC_val 
  * @return char
