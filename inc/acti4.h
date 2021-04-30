@@ -13,26 +13,22 @@
 #include<avr/io.h>
 #include <util/delay.h>
 #include <stdint.h>
-#define F_CPU 16000000UL 	//Clock is set to 16 MHz 
+#define F_CPU 16000000UL 	//Clock is set 
 /**
- * @brief Function to initialize the USART communication
- * @param[in] unsigned integer to set the baud rate to 9600
+ * @brief functn to initialize USART communication
+ * @param[in] unsign integer to set the baud rate to 9600
  * 
  */
 void InitUSART(uint16_t);
 
 /**
- * @brief Function to read the character from UDR register
- * @return Returning the character that is stored in UDR register
+ * @brief functn to read  character from UDR register
+ * @return return the character that is stored in UDR register
  * 
  */
 char USARTread();
 
-/**
- * @brief Function to write the character to the USART buffer
- * @param[in] uint16_t type integer is temperature value which is passed as input value
- * 
- */
+
 void USARTwrite(uint16_t);
 
 #endif 
