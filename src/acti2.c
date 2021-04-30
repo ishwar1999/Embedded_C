@@ -11,7 +11,7 @@
 #include<avr/io.h>
 #include<acti2.h>
 /**
- * @brief A function to initialise the analog to digital converter
+ * @brief A functn to initialise the analog to digital converter
  * 
  */
 void InitADC()
@@ -22,9 +22,9 @@ void InitADC()
 
 
 /**
- * @brief A funciton to receive temperature sensor inputs from analog pin and output it to a register ADC which has 2 8 bit registers ADCL and ADCH.
+ * @brief A funtn to receive temp sensor inputs from analog pin and output it to a register ADC which has 2 8 bit registers ADCL and ADCH.
  * 
- * @param ch 
+ * @param  
  * @return uint16_t 
  */
 uint16_t ReadADC(uint8_t ch)
@@ -34,13 +34,13 @@ uint16_t ReadADC(uint8_t ch)
     ch=ch&0b00000111;
     ADMUX|=ch;
 
-    //start single Conversion
+    
     ADCSRA|=(1<<ADSC);
 
-    //wait for conversion to complete
+   
     while(!(ADCSRA & (1<<ADIF)));
     
-    //Clear ADIF by writing one to it
+    
     ADCSRA|=(1<<ADIF);
     return(ADC);
 }
